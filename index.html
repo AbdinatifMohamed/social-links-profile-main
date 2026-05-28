@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social links profile</title>
@@ -12,23 +14,35 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
   </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+<body class="bg-[#141414] min-h-screen flex flex-col items-center justify-center font-inter p-5">
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+  <main class="flex flex-col items-center bg-[#1f1f1f] min-w-[300px] max-w-[425px] w-full text-[#ffffff] text-sm p-5 lg:p-10 rounded-md mb-10">
+    <div class="flex flex-col items-center">
+        <img class="h-20 w-20 rounded-full" src="./assets/images/avatar-jessica.jpeg"/>
+        <h1 class="text-2xl mb-2 mt-5">Jessica Randall</h1>
+        <p class="text-[#c5f82a]">London, United Kingdom</p>
+      </div>
+      <p class="my-5">"Front-end developer and avid reader."</p>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
+      <div class="flex flex-col text-center gap-3 w-full">
+        <a class="bg-[#333333] py-3 rounded-md hover:bg-[#c5f82a] hover:text-[#1f1f1f]">Github</a>
+        <a class="bg-[#333333] py-3 rounded-md hover:bg-[#c5f82a] hover:text-[#1f1f1f]">Frontend Mentor</a>
+        <a class="bg-[#333333] py-3 rounded-md hover:bg-[#c5f82a] hover:text-[#1f1f1f]">LinkedIn</a>
+        <a class="bg-[#333333] py-3 rounded-md hover:bg-[#c5f82a] hover:text-[#1f1f1f]">Twitter</a>
+        <a class="bg-[#333333] py-3 rounded-md hover:bg-[#c5f82a] hover:text-[#1f1f1f]">Instagram</a>
+      </div>
+  </main>
   
-  <footer class="attribution">
+  <footer class="attribution text-[#ffffff]">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Abdinatif Mohamed</a>.
   </footer>
 </body>
 </html>
